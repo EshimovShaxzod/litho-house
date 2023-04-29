@@ -1,0 +1,226 @@
+@media screen and (max-width:450px) {
+    .container{
+        max-width: 430px;
+        padding-inline-start: 0 15px;
+    }
+
+    .call{
+        display: none;
+    }
+    .logo{
+        width: 140px;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .burger{
+        position: absolute;
+        right: 15px;
+    }
+
+    /* MAIN UCHUN  */
+    /* hero */
+    .number{
+        display: none;
+    }
+    .kingdom_bg{
+        display: none;
+    }
+    .small_title{
+        text-align: center;
+    }
+    .small_title h1{
+        font-size: 42px;
+        margin: 0 auto;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    .small_title p{
+        font-size: 18px;
+    }
+
+    /* kingdom */
+    .kingdom{
+        height: 630px;
+    }
+    .kingdom_about{
+        display: block;
+    }
+    .based_company{
+        text-align: center;
+    }
+    .about_company{
+        text-align: center;
+        padding: 5px 20px;
+    }
+
+    /* design */
+    .design{
+        height: 2380px;
+    }
+    .design_describe{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .design_about{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .design_info{
+        padding: 0 20px;
+        position: absolute;
+        top: 230px;
+        left: 10px;
+    }
+
+    /* working */
+    .working{
+        padding-top: 140px;
+        height: 600px;
+    }
+    .working_about{
+        display: block;
+    }
+    .people h3{
+        color: #fff;
+        font-size: 24px;
+        line-height: 1.8;
+        font-weight: 400;
+    }
+
+    /* play */
+    .play{
+        height: 700px;
+    }
+    .play_video{
+        width: 100%;
+    }
+    .right_title{
+        padding-top: 60px;
+        width: 100%;
+        display: block;
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    /* company_logo */
+    .company_logo{
+        height: 500px;
+    }
+    .logos{
+        width: 100%;
+        display: block;
+    }
+    .logo_company{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .logo_company img{
+          width: 210px;
+    }
+
+    /* selected_section */
+    .selected_section{
+        height: 2150px;
+    }
+    .big_title{
+        display: block;
+        margin-bottom: 50px;
+    }
+    .work_houses{
+        margin-top: 80px;
+        display: block;
+        width: 100%;
+    }
+    .house{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+
+    }
+
+    /* world_section */
+    .world_section{
+        height: 800px;
+    }
+    .world{
+        display: block;
+    }
+    .world_pic{
+        height:340px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .world_pic h1{
+        display: none;
+    }
+    .world_pic img{
+        width: 100%;
+        /* width: 320px; */
+        z-index: 2001;
+    }
+
+    .architecture_about h2{
+         font-size: 27px;
+    }
+    .architecture_about{
+        text-align: center;
+        padding: 100px 10px;
+    }
+
+    /* latest_section */
+    .latest_section{
+        height: 1540px;
+    }
+    .latest_describe{
+        display: block;
+        width: 100%;
+    }
+    .latest_about{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .latest_bg{
+        width: 100%;
+    }
+
+    /* last */
+    .last_title{
+        text-align: center;
+        padding: 0 10px;
+    }
+    .last_title h2{
+        font-size: 22px;
+    }
+
+
+    /* footer */
+    .footer_list{
+        display: block;
+    }
+    .list{
+        display: block;
+        text-align: center;
+    }
+    .list li{
+        margin-bottom: 10px;
+    }
+    .network_list{
+       display: flex;
+       justify-content: center;
+       margin-bottom: 50px;
+       padding-top: 15px;
+    }
+    .logo_footer{
+        width: 130px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .logo_footer img{
+        width: 100%;
+    }
+    
+}

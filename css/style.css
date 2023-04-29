@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Atkinson+Hyperlegible:wght@400;700&family=Average+Sans&family=Barlow:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&family=Livvic:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&family=Montserrat:wght@300;400;500;600;700;800&family=Nanum+Gothic&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@200;300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+body{
+    background-color: #212529;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 1340px;
+    margin: 0 auto;
+}
+header{
+    background-color: #212529;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 15px 0;
+}
+.logo{
+    width: 170px;
+}
+.logo img{
+    width: 100%;
+}
+.call{
+   position: absolute; 
+   right: 58px;
+}
+.burger{
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+.bur{
+    width: 20px;
+    height: 3px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    background-color: #fff;
+}
+.bug{
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+.call_link{
+    color: #fff;
+}
+
+/* hero start */
+.hero{
+    position: relative;
+}
+.house_info{
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    display: flex;
+}
+.hero_pic{
+   background-image: url("../img/home-slider-21.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 500px;
+   position: relative;
+}
+.hero_bg{
+    width: 100%;
+    height: 100%;
+    background-color: #2f3235;
+    opacity: 0.5;
+}
+.number{
+    animation-name: number;
+    transition: .5s ease all;
+    animation-duration: 3s;
+    width: 150px;
+    height: 200px;
+    background-color: yellow;
+    font-size: 90px;
+    margin-right: 35px;
+}
+.small_title h1{
+    color: white;
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+.small_title p{
+    color: #fff;
+    font-size: 20px;
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+@keyframes number {
+    0%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: yellow;
+    }
+    100%{
+        background-color: yellow;
+    }
+}
+
+.direction{
+    position: absolute;
+    bottom:0;
+    right: 0;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: #3e4145;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+.left{
+    background-color: #212529;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+/* hero end */
+
+/* kingdom start */
+.kingdom{
+    height: 450px;
+}
+.kingdom_about{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding-top: 100px;
+}
+.working_years{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-left: 5px solid #3e4145; */
+}
+.working_years h2{
+   color: yellow; 
+   font-size: 105px;margin-right: 15px;
+}.working_years p{
+    color: #fff;
+    font-size: 21px;
+}
+.kingdom_bg{
+    border: 20px solid #3e4145;
+    position:absolute;
+    z-index: -1;
+}
+.based_company{
+    padding: 10px 55px;
+}
+.based_company span{
+    display: inline-block;
+    color: #606367;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+.based_company h4{
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.5;
+}
+.about_company{
+    padding: 10px 50px 10px 5px;
+}
+.about_company p{
+    color: #86898b;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+.about_company a{
+    color: #86898b;
+    text-decoration: underline;
+    font-size: 17px;
+    text-transform: uppercase;
+    transition: .4s ;
+}
+.about_company a:hover{
+    color: #3e4145;
+}
+/* kingdom end */
+
+/* design start */
+.design{
+    height: 500px;
+}
+.design_describe{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.design_about{
+    position: relative;
+    width: 310px;
+    height:auto;
+    overflow: hidden;
+}
+.design_about h2{
+    position: absolute;
+    z-index: 101;
+    font-family: 'Montserrat', sans-serif;
+    top: 40px;
+    font-weight: normal;
+    font-size: 27px;
+    left: 30px;
+    color: #fff;
+}
+.design_about i{
+    position: absolute;
+    color: rgb(21, 21, 21);
+    z-index: 101;
+    font-size: 30px;
+    bottom: 27px;
+    left: 45px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 9px;
+    transition: .5s;
+}
+.design_info{
+    position: absolute;
+    top: 230px;
+    left: 40px;
+    opacity: 0;
+    transition: .9s ease;
+}
+.design_about:hover .design_info{
+    opacity:1;
+    top: 210px;
+    z-index: 200;
+}
+.design_info p{
+    color: rgb(145, 145, 145);
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.design_info a{
+    color: yellow;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.design_about:hover i{
+    opacity: 0;
+}
+.design_img img{
+    width: 100%;
+    height: auto;
+    transition: 1.6s ease all;
+}
+.design_about:hover .design_bg{
+    background-color: #181819;
+    opacity: 0.7;
+    z-index: 100;
+}
+.design_img{
+    width: 100%;
+    height: auto;
+}
+.design_about:hover img{
+    transform: scale(1.4);
+    overflow: hidden;
+}
+.design_bg{
+   width: 100%; 
+   height: 100%;
+   position: absolute;
+   transition: 1.9s ease all;
+}
+/* design end */
+
+/* working start */
+.working{
+    padding-top: 60px;
+    height: 400px;
+}
+.working_about{
+    display: flex;
+    justify-content:space-between;
+}
+.people{
+    height: auto;
+    width: 395px;
+    padding: 10px 5px;
+}
+.people h3{
+    color: #fff;
+    font-size: 26px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.owner{
+    padding: 22px 10px;
+    width: 350px;
+}
+.owner h4{
+    margin-bottom: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+.owner p{
+    color: rgb(144, 144, 144);
+    line-height: 1.8;
+}
+.expect{
+    width: 350px;
+    padding: 22px 10px;
+}
+.expect p{
+    color: #86898b;
+    line-height: 1.8;
+}
+.expect h4{
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: normal;
+}
+/* working end */
+
+/* play start */
+.play{
+    position: relative;
+    height: 600px;
+    margin-bottom: 100px;
+}
+.play_video{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url("https://litho.themezaa.com/wp-content/uploads/2020/06/architecture-img-14.jpg");
+}
+.play_video img{
+    width: 80px;
+    height: 80px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 120;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: yellow;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .8s;
+}
+.bg_color{
+    background-color: #333334;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.right_title{
+    height: 180px;
+    width: 600px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #212529;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right_title h3{
+    color: #fff;
+    font-size: 40px;
+}
+.right_title span{
+    text-decoration: underline;
+    color: yellow;
+}
+/* play end */
+
+/* company_logo start */
+.company_logo{
+    height: 250px;
+}
+.logos{
+    padding: 30px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.logos img{
+   width: 230px;
+}
+/* company_logo end */
+
+/* selected_section start */
+.selected_section{
+    position: relative;
+    border-top: 2px solid #606367;
+    height: 750px;
+    display: block;
+}
+.big_title{
+    width: 200px;
+    margin: 0 auto;
+    position: absolute;
+    color: yellow;
+    background-color: #212529;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: -2px;
+    left: 50%;
+}
+
+.work_houses{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 700px;
+}
+.house{
+    /* display: grid;
+    grid-template-columns: 1fr; */
+    width: 320px;
+    height: 500px;
+    overflow: hidden;
+    transition: 1s;
+}
+.house:hover img{
+    transform: translateY(-5px);
+}
+.house:hover{
+    position: relative;
+    top: -3px;
+}
+.house_pic{
+    overflow: hidden;
+    height: 400px;
+    position: relative;
+}
+.house_pic i{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 55%;
+    left: 50%;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .5s ease all;
+}
+.house_pic:hover i{
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    z-index: 2000;
+}
+.house:hover .bg_color{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    opacity: .7;
+}
+.bg_color{
+    transition: 1s;
+}
+.house img{
+    width: 100%;
+    height:400px;
+    transition: 1s ease all;
+    height: auto;
+}
+.houses_info{
+    padding-top: 35px;
+    text-align: center;
+    width: 100%;
+    height: 90px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.houses_info p{
+    color: #606367;
+    padding-bottom: 30px;
+}
+.houses_info h4{
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+/* selected_section end */
+
+/* world_section start */
+.world_section{
+    height: 620px;
+    margin-bottom: 100px;
+}
+.world{
+    display: flex;
+    background-color: #1e2124;
+}
+.world_pic{
+    height:600px;
+    width: 75%;
+    overflow: hidden;
+}
+.world_pic img{
+    width: 480px;
+    z-index: 2001;
+}
+.world_pic{
+    position: relative;
+    /* background-image: url("../img/architecture-img-15.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    height:600px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.world_pic h1{
+    position: absolute;
+    top: 32%;
+    left: -30%;
+    color: yellow;
+    font-size: 200px;
+}
+.world_bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1e2124;
+    opacity: .7;
+    z-index: 2000;
+}
+.architecture_about{
+    padding: 100px 80px;
+}
+.architecture_about h2{
+    color: #fff;
+    font-size: 45px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+.architecture_about p{
+    color: #606367;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+.architecture_about a{
+    color: #6f7175;
+    text-transform: uppercase;
+    border-bottom: 3px solid #606367;
+}
+/* world_section end */
+
+/* latest_section start */
+.latest_section{
+    position: relative;
+    border-top: 2px solid #606367;
+    height: 500px;
+}
+.latest_describe{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.latest_about{
+    width: 320px;
+    height: 340px;
+    position: relative;
+    overflow: hidden;
+    transition: 1.3s all ease;
+}
+.latest_about:hover .latest_bg{
+    background-image: linear-gradient(to top, rgb(13, 13, 13) 35%, rgba(51, 49, 49, 0.185));
+}
+.latest_bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 120;
+    opacity: 0.6;
+    transition: 1.3s all ease;
+    background-image: linear-gradient(to top, black 29%, rgba(148, 146, 146, 0.185));
+}
+.latest_about:hover img{
+    transform: scale(1.1);
+}
+.latest_pic{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.latest_pic img{
+    width: 100%;
+    height: 100%;
+    transition: 1.3s ease all;
+}
+.send{
+    top: 12%;
+    left: 14%;
+    position: absolute;
+    z-index: 130;
+}
+.send button{
+    padding: 4px 9px;
+    text-transform: uppercase;
+    background-color: rgb(26, 29, 31);
+    color: #fff;
+    border: 0;
+    transition: 1s all ease;
+    border-radius: 4px;
+}
+.latest_about:hover .send button{
+    background-color: #fff;
+    color: #181819;
+} 
+.latest_info{
+    left: 10%;
+    position: absolute;
+    z-index: 130;
+    bottom: 10%;
+}
+.latest_info span{
+    display: block;
+    margin-bottom: 15px;
+    color: rgb(200, 200, 200);
+    text-transform: uppercase;
+}
+.latest_info p{
+    color: white;
+    padding-right: 25px;
+    font-size: 21px;
+}
+/* latest_section end */
+
+/* last start */
+.last{
+    height: 150px;
+    text-align: center;
+    padding-top: 50px;
+    border-bottom: 2px solid #606367;
+}
+.last h2{
+    color:#fff;
+    letter-spacing: 1.2px;
+}
+.last span{
+    color: yellow;
+    border-bottom: 2px solid yellow;
+}
+/* last end */
+
+
+/* footer */
+footer{
+    height: 150px;
+}
+.footer_list{
+    padding-top: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list{
+    display: flex;
+    list-style: none;
+}
+.list li{
+    padding: 0 15px;
+    color: #86898b;
+}
+
+.network_list{
+    display: flex;
+    list-style: none;
+}
+.network_list li{
+    padding: 0 15px;
+    font-size: 24px;
+}
+.network_list li a {
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+.network_list li a:hover{
+    color: #606367;
+}
+.logo_footer{
+    width: 170px;
+}
+.logo_footer img{
+    width: 100%;
+}
+
+
