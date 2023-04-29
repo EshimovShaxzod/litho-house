@@ -1,6 +1,6 @@
-@media screen and (max-width:450px) {
+@media screen and (max-width:560px) {
     .container{
-        max-width: 430px;
+        max-width: 530px;
         padding-inline-start: 0 15px;
     }
 
